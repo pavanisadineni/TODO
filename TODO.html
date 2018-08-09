@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>TODO</title>
+    <title>To do list</title>
     <link rel="stylesheet" href="TODO.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <div class="main-div">
-       <h1 class="h1">TODO APP</h1>
-        <form class='form'>
-            <input class="input" type="text">
-            <input class="submit" type="submit" value="ADD TODO">
-        </form>
+    <div class="wrapper">
+        <div class="heading">
+            <h2>My To Do List</h2>
+            <form>
+            <input type="text" class="input" placeholder="Type your list here">
+<!--            <input type="submit" class="submit" >-->
+            
+            
+            <a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i></a>
+            <span class="error">To do is already exist</span>
+            </form>
+        </div>
+        <div class="list">
+           <h3>Incomplete list</h3>
+            <ul id="myUL"></ul>
+        </div>
+        <div class="complete"> 
+        <h3>Completed list</h3>
+        <ul id="my-complete-list"></ul>
+        </div>
         
-       
+ 
     </div>
-    <div class="span"><span class="error">To-Do item you have entered is already preasent</span></div>
-    <div class="ul">
-    <ul class="new"></ul>
-<!--     <ul class="old"></ul>-->
-     </div>
-    <script src="TODO.js"></script>
+<!--    <div class="checklist"><ul><li>abc</li></ul></div>-->
+   <script src="TODO.js"></script>
+
 </body>
+
 </html>

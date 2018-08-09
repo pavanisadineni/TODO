@@ -1,73 +1,153 @@
-body {
-    background-image: url(TODO.jpg);
+body{
+    margin: 0;
+    padding: 0;
+/*    background-image:url(1.jpg);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background: linear-gradient(to right, #abbaab, #ffffff);
 }
-.h1{
-    color: orchid;
+.wrapper{
+    width: 900px;
+    margin: 0px auto;
+}
+
+
+.wrapper .heading  h2{
+/*    margin: 180px 0 0 0;*/
+    text-align: center;
     font-family: cursive;
     font-size: 40px;
-}
-.main-div {
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+    font-weight: bold;
+    color: black;
 
-.input {
-    height: 68px;
-    width: 471px;
-    background-color: beige;
-    color: darkblue;
-    font-size: 25px;
-    font-family: monospace;
-    border: none;
-    border-radius: 8px;
 }
+.wrapper .heading .input{
+    display: inline-block;
+    width: 560px;
 
-.submit {
-    height: 68px;
-    position: relative;
-    right: 4px;
-    border-radius: 8px;
-    border: none;
-    background-color: steelblue;
-    color: aliceblue;
+    margin: 30px 0px 20px 180px;
+    padding: 8px;
+    border:2px solid black;
+    border-radius:8px;
+    
+    font-family: cursive;
+    font-weight: bold;
     font-size: 20px;
-    font-family: cursive;
-}
+   
+  background: transparent;
 
-.input:hover {
-    background-color: lightblue;
-    border-radius: 8px;
+    
 }
-
-.submit:hover {
-    background-color: cornflowerblue;
+/*
+.wrapper .heading .input:focus{
+    margin: 30px 0 20px 100px;
+    width: 630px;
+    outline:none;
 }
-ul li{
-    color: mediumblue;
-    font-size: 30px;
-    font-family: cursive;
-    list-style:circle;
+*/
+.wrapper .heading .input::placeholder{
+    color: black;
 }
-input[type='checkbox']{
-     transform: scale(2);
+.wrapper .submit{
+      background-color: coral; /* Green */
+    border: none;
+    border-radius:5px;
+    color: white;
+    padding: 14px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
-.error{
-    color: orangered;
-    font-size: 18px;
-    margin: 30px;
-    font-family: sans-serif;
+.wrapper .heading .fa{
+    position: relative;
+    top:12px;
+    font-size: 51px;
+    
+}
+.wrapper span{
     display: none;
+    color: red;
+    font-size: 30px;
+    margin-left:180px;
+    font-family: Arial,sans-serif;
+    
 }
-.span{
-    display: flex;
-    justify-content: center;
+.wrapper .heading a{
+    color: coral;
 }
-.ul{
-    height: 60vh;
-    display: flex;
-    justify-content: center;
+.wrapper .list{
+    margin-left: 80px;
+    display: inline-block;
+    width: 400px;
+    word-wrap: break-word;
+/*    border:2px solid black;*/
+/*        border-radius:10px;*/
 }
+.wrapper .done{
+    float:right;
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.wrapper .list h3, .wrapper .complete h3{
+    text-align: center;
+    color:forestgreen;
+    font-size: 25px;
+}
+
+.wrapper .complete{
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    word-wrap: break-word;
+/*        border:2px solid black;*/
+/*        border-radius:10px;*/
+}
+.wrapper .complete .add{
+    margin-right: 10px;
+    position: relative;
+    bottom: 3px;
+    color: green;
+    font-weight: bold;
+   
+
+}
+.wrapper .complete .add:hover{
+    color: green;
+    
+    
+}
+.wrapper .complete .remove{
+    margin-left: 10px;
+    float:right;
+    font-weight: bold;
+    color: red;
+    
+}
+.wrapper .complete .remove:hover{
+    color: red;
+}
+.wrapper .list li, .wrapper .complete li{
+    list-style: disc;
+/*    display: inline;*/
+    padding: 15px;
+    font-size:20px;
+    font-family: arial;
+    color: dodgerblue;
+}
+.wrapper .checkbox{
+    display: inline-block;
+/*    padding: 15px 30px;*/
+/*    font-size: 20px;*/
+/*    transform:scale(2);*/
+    margin-left: 30px;
+    position: relative;
+    bottom:3px;
+}
+
+#myUL li:nth-child(2n+1), .wrapper .complete li:nth-child(2n+1){
+    color: orangered;
+}
+
